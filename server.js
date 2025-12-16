@@ -4,6 +4,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const path = require('path');
 const authRoutes = require('./server/routes/auth');
+const booksRoutes = require('./server/routes/books');
 const { initializeDatabase } = require('./server/config/database');
 
 const app = express();
@@ -20,6 +21,7 @@ initializeDatabase();
 
 // Routes
 app.use('/api/auth', authRoutes);
+app.use('/api/books', booksRoutes);
 
 // Serve HTML pages
 app.get('/', (req, res) => {

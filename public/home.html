@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - E-Bookstore</title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="images/Litera.png" alt="Logo" class="nav-logo">
+        </div>
+        <div class="nav-right">
+            <a href="home.html" class="nav-link">Home</a>
+            <a href="catalog.html" class="nav-link">Catalog</a>
+            <a href="cart.html">
+                <img src="images/cart-icon.png" alt="Cart" class="nav-icon">
+            </a>
+            <a href="about.html" class="nav-link">About Us</a>
+            <a href="contact.html" class="nav-link">Contact Us</a>
+            <a href="profile.html">
+                <img src="images/profile-icon.png" alt="Profile" class="nav-icon">
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" id="searchInput" class="search-input" placeholder="Search for books...">
+            <button id="searchBtn" class="search-btn">Search</button>
+        </div>
+
+        <!-- Hero Image -->
+        <div class="hero-container">
+            <img src="images/promos2.webp" alt="Hero Image" class="hero-image">
+        </div>
+
+        <!-- New Arrivals Section -->
+        <h2 class="section-title">New Arrivals</h2>
+        <div class="books-container" id="newArrivals">
+            <!-- Books will be loaded dynamically -->
+        </div>
+
+        <!-- Featured Section -->
+        <h2 class="section-title">Featured</h2>
+        <div class="books-container featured-grid" id="featured">
+            <!-- Books will be loaded dynamically -->
+        </div>
+
+        <!-- See All Button -->
+        <div class="see-all-container">
+            <button class="see-all-btn">See All</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Left Section -->
+            <div class="footer-left">
+                <h2 class="footer-brand">Litera.</h2>
+                <div class="social-icons">
+                    <img src="images/facebook-icon.webp" alt="Facebook" class="social-icon">
+                    <img src="images/twitter-icon.png" alt="Twitter" class="social-icon">
+                    <img src="images/instagram-icon.jpg" alt="Instagram" class="social-icon">
+                </div>
+                <p class="copyright">Copyright 2025 ©️ Litera.com - All Rights Reserved</p>
+            </div>
+
+            <!-- Center Section -->
+            <div class="footer-center">
+                <h3 class="footer-heading">Company</h3>
+                <a href="home.html" class="footer-link">Home</a>
+                <a href="about.html" class="footer-link">About Us</a>
+                <a href="contact.html" class="footer-link">Contact Us</a>
+                <a href="#" class="footer-link">Privacy Policy</a>
+            </div>
+
+            <!-- Right Section -->
+            <div class="footer-right">
+                <h3 class="footer-heading">Get In Touch</h3>
+                <div class="email-form">
+                    <input type="email" placeholder="Enter your email" class="email-input">
+                    <button class="submit-btn">Submit</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/home.js"></script>
+</body>
+</html>
